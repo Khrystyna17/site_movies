@@ -1,0 +1,15 @@
+header{
+    color: gray;
+}
+
+.logo{
+    text-transform: uppercase;
+}
+
+header#home nav .menu a::{
+    color: gray;
+}
+
+footer{
+    color: gray;
+}
