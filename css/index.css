@@ -11,7 +11,7 @@
 }
 
 body {
-    max-width: 980;
+    max-width: 980px;
     margin: auto;
 }
 
@@ -112,10 +112,18 @@ header .banner{
     color: white;
 }
 
-@media (min-width: 640px){
+@media (min-width: 640px) {
 
-    .movies-list{
-        
+    .movies-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .movies-list {
+        grid-template-columns: 1fr 1 fr 1 fr;
     }
 }
 
