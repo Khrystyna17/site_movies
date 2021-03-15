@@ -1,15 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    font-family: 'Noto Serif', serif;
+    --main-color: #282828;
+    --border-movies-list-img-color:#464646;
+}
+
+body {
+    max-width: 980;
+    margin: auto;
+}
+
+/*
 header{
-    color: gray;
+    color: #3F3F3F;
+}
+*/
+
+#home {
+    color: var(--main-color);
 }
 
-.logo{
+.logo {
+    font-family: 'Noto Serif', serif;
+    font-size: 30px;
     text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
 }
 
-header#home nav .menu a::{
-    color: gray;
+header .menu {
+    list-style-type: none;    
+}
+
+header .menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding: 3px;
+}
+
+header .menu a:hover{
+    font-weight: bold;
+}
+
+@media (min-width: 610px) {
+
+    header nav{
+        display:flex;
+    }
+
+    header .menu{
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        align-items: center;
+    }
+
+}
+
+
+/*
+header#home nav .menu a {
+    color: #3F3F3F;
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+}
+*/
+/*
+.movies-list article img{
+    border: 1px solid var(--border-movies-list-img-color);
+    padding: 1px;
+    margin: 5px;
+}
+
+.banner{
+    color: var(--main-color);
+}
+
+.movies-list {
+    font-size: 16px;
 }
 
 footer{
-    color: gray;
+    color: var(--main-color);
 }
+*/
