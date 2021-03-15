@@ -5,6 +5,9 @@
     font-family: 'Noto Serif', serif;
     --main-color: #282828;
     --border-movies-list-img-color:#464646;
+    /*--films-color: #879D9D; */
+    /*--films-color: #366B6B; */
+    --films-color: #FFFFFF;
 }
 
 body {
@@ -30,6 +33,14 @@ header{
     text-align: center;
 }
 
+.banner h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--films-color);
+    text-align: center;
+}
+
 header .menu {
     list-style-type: none;    
 }
@@ -44,6 +55,8 @@ header .menu a{
 header .menu a:hover{
     font-weight: bold;
 }
+
+
 
 @media (min-width: 610px) {
 
@@ -60,6 +73,51 @@ header .menu a:hover{
 
 }
 
+header .banner{
+    background-image: url(../img/background-films.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button {
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    color: #FFFFFF; 
+    /*color: #366B6B; */
+    text-align: center;
+    transition: color 0.7s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 640px){
+
+    .movies-list{
+        
+    }
+}
 
 /*
 header#home nav .menu a {
@@ -75,9 +133,7 @@ header#home nav .menu a {
     margin: 5px;
 }
 
-.banner{
-    color: var(--main-color);
-}
+
 
 .movies-list {
     font-size: 16px;
