@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    font-family: 'Noto Serif', serif;
+    --main-color: #282828;
+}
+
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+/*
+header{
+    color: #3F3F3F;
+}
+*/
+
+#home {
+    color: var(--main-color);
+}
+
+.logo {
+    font-family: 'Noto Serif', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-align: center;
+}
+
+
+header .menu {
+    list-style-type: none;    
+}
+
+header .menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding: 3px;
+}
+
+header .menu a:hover{
+    font-weight: bold;
+}
+
+
+
+@media (min-width: 610px) {
+
+    header nav{
+        display:flex;
+    }
+
+    header .menu{
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+        align-items: center;
+    }
+
+}
