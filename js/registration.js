@@ -104,9 +104,10 @@
 
 //});
 
+
+//form.addEventListener('click', registration);
 const submitButton = document.querySelector('.form input[type="submit"]');
 submitButton.addEventListener('click', registration);
-//form.addEventListener('click', registration);
 
 async function registration(ev) {
     ev.preventDefault();
@@ -131,6 +132,6 @@ async function registration(ev) {
             // password2: password2.value,
         })
     });
-    //document.querySelector('.form').reset();
+    document.querySelector('.form').reset();
     //form.reset();
 }
