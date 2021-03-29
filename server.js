@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.resolve(__dirname, './')));
 
-app.post('/login', (req, res) => {
+app.post('/registration', (req, res) => {
   const fs = require('fs');
   fs.appendFile('./logins.txt', JSON.stringify(req.body) + '\n', function(err) {
     if (err) {

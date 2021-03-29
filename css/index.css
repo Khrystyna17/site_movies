@@ -118,6 +118,17 @@ header .banner{
     background-color: transparent;
 }
 
+/* .button a {
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    /* color: var(--main-color); */
+    /* padding: 3px; */
+/*} */
+
+/* a:hover{
+    font-weight: bold;
+} */
+
 .button:hover {
     color: var(--card-button-color);
     background-color: var(--button-color); ;
