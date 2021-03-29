@@ -33,6 +33,9 @@ async function fetchAndRenderMovies() {
     renderMovies(movies);
 }
 
+
+
+
 fetchAndRenderMovies();
 
 //renderMovies(JSON.parse(moviesJSON));

@@ -12,6 +12,8 @@
     <header id="home">
         <nav>
             <div class="logo">Movies</div>
+            <label class="burger-icon" for="burger-checkbox">☰</label>
+            <input type="checkbox" id="burger-checkbox">
             <ul class="menu">
                 <li><a href="#home">Головна</a></li>
                 <li><a href="#movies">Фільми</a></li>
@@ -27,15 +29,21 @@
         </div>
     </header>
     <main>
-        <h2 id="movies">Огляд фільмів</h2>
-        <h5>Найцікавіші новинки зі світу кіно</h5>
-        <div class="movies-carousel">
-            <img class="current-image" src="" alt="Carousel image">
-            <button class="next">Next</button>
-            <button class="prev">Previous</button>
+        <div class="small-banner">
+            <div class="description-banner">
+                <h2 id="movies">Огляд фільмів</h2>
+                <h5>Найцікавіші новинки зі світу кіно</h5>
+            </div>
+            <div class="movies-carousel">
+                <img class="current-image" src="" alt="Carousel image">
+                <div class="btn">
+                    <button class="prev">Previous</button>
+                    <button class="next">Next</button>
+                </div>
+            </div>
         </div>
         <div class="movies-list">
-            <!--<article>
+            <!-- --><article>
                 <h3>Мавританець</h3>
                 <img src="img/mauritanian.jpg" alt="The Mauritanian">
                 <p>Реальна історія в’язня Гуантанамо, який провів за ґратами 14 років. У центрі сюжету мавританець <br>
@@ -70,23 +78,26 @@
                 <div class="button-container">
                     <button>Переглянути</button>
                 </div>
-            </article>
-        -->
+    <!--   -->
         </div>
 
     </main>
     <footer id="contacts">
-        <h4>Контакти</h4>
-        <h5>Побажання щодо покращення сайту можете надсилати на пошту, яка вказана нижче.</h5>
         <div id="contact-info">
-            <p>+38 (063) 777 7777</p>
-            <p>movies@email.com</p>
-            <p>Lviv, Ukraine</p>
-            <p>©2021 KZ</p>
+            <div class="ftr">
+                <h4>Контакти</h4>
+                <h5>Побажання щодо покращення сайту можете надсилати на пошту, яка вказана нижче.</h5>
+            </div>
+            <div id="contact-info">
+                <p>+38 (063) 777 7777</p>
+                <p>movies@email.com</p>
+                <p>Lviv, Ukraine</p>
+                <p>©2021 KZ</p>
+            </div>
         </div>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/movies.js"></script>
+   <!-- <script src="js/movies.js"></script> -->
     <script src="js/carousel.js"></script>
 </body>
 
