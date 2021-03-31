@@ -118,16 +118,10 @@ header .banner{
     background-color: transparent;
 }
 
-/* .button a {
+.banner a {
     text-decoration: none;
-    /* text-transform: uppercase; */
-    /* color: var(--main-color); */
-    /* padding: 3px; */
-/*} */
+} 
 
-/* a:hover{
-    font-weight: bold;
-} */
 
 .button:hover {
     color: var(--card-button-color);
@@ -189,6 +183,10 @@ main .small-banner {
     display: flex;
     justify-content: space-around;
 }
+
+/* .button {
+    text-decoration: none;
+} */
 
 .button {
     padding: 0.35em 1.2em;

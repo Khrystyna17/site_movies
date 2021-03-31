@@ -96,18 +96,10 @@ async function registration(ev) {
             email: document.querySelector('.form .form-control input[name=email]').value,
             password: document.querySelector('.form .form-control input[name=password]').value,
             password2: document.querySelector('.form .form-control input[name=password2]').value,
-            // name: document.querySelector('.form. input[name=username]').value,
-            // email: document.querySelector('.form input[name=email]').value,
-            // password: document.querySelector('.form input[name=password]').value,
-            // password2: document.querySelector('.form input[name=password2]').value,
-            // name: username.value,
-            // email: email.value,
-            // password: password.value,
-            // password2: password2.value,
         })
     });
     document.querySelector('.form').reset();
-    //form.reset();
+    alert("Реєстрація пройшла успішно!");
 }
 
 // Event listeners
